@@ -13,6 +13,6 @@ docker run -d -p 8011:8000 -p 9011:9000 --name=portainer --restart=always -v /va
 cd CTFd/plugins
 git clone https://github.com/offsecginger/CTFd-Docker-Challenges.git
 cd CTFd-Docker-Challenges
-cp docker_challanges ..
+mv docker_challanges/ ..
 rm -rf CTFd-Docker-Challenges
 # Completed Install Yay _ ALSO MAKE SURE TO RUN AS ROOT OR SUDO THIS
