@@ -1,6 +1,6 @@
 !#/bin/sh
 apt update
-apt install python3-pip docker.io docker-compose
+apt install -y docker.io docker-compose python3-pip
 git clone https://github.com/CTFd/CTFd.git
 cd CTFd
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential python-dev python-pip libffi-dev
