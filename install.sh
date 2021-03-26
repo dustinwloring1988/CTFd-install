@@ -2,8 +2,8 @@
 apt update
 git clone https://github.com/CTFd/CTFd.git
 cd CTFd
-apt install -y python3-dev python3-pip libffi-dev docker.io docker-compose
-sudo DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential
+apt install -y docker.io docker-compose python3-pip libffi-dev
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential python-dev
 pip3 install -r requirments.txt
 pip3 install flask 
 apt update
