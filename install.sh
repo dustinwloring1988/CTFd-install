@@ -2,12 +2,12 @@
 apt update
 git clone https://github.com/CTFd/CTFd.git
 cd CTFd
-apt install python3-dev python3-pip libffi-dev docker.io docker-compose
+apt install -y python3-dev python3-pip libffi-dev docker.io docker-compose
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential
 pip3 install -r requirments.txt
 pip3 install flask 
 apt update
-doker-compose up
+docker-compose up
 docker volume create portainer_data
 docker run -d -p 8011:8000 -p 9011:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce --templates https://raw.githubusercontent.com/dustinwloring1988/templates/master/pentest
 cd CTFd/plugins
